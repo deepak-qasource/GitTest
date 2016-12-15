@@ -29,6 +29,13 @@ public class NewTest extends BaseTest {
 	
 	}
 	
+	@Test()
+	public void TestSampleTest2(){
+		Assert.assertTrue(true);
+		
+	
+	}
+	
 
 
 }
