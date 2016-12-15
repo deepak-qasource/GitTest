@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestSuite]">
+  <parameter name="author" value="Only Testing"/>
+  <parameter name="searchKey" value="LogIn"/>
+  <listeners>
+    <listener class-name="com.Report.Listener"/>
+  </listeners>
+  <test name="testGuru">
+    <classes>
+      <class name="com.Sample.NewTest">
+        <methods>
+          <include name="test1"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.Sample.NewTest -->
+    </classes>
+  </test> <!-- testGuru -->
+  <test name="testGuru(failed)">
+    <classes>
+      <class name="com.Sample.NewTest">
+        <methods>
+          <include name="setup"/>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Sample.NewTest -->
+    </classes>
+  </test> <!-- testGuru(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

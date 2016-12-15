@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ContactTests">
+	<parameter name="author" value="Only Testing" />
+	<parameter name="searchKey" value="LogIn" />
+	<test name="testGuru">
+
+
+		<classes>
+
+			<class name="com.Sample.NewTest">
+				<methods>
+					<include name="test1" /> 
+					<include name="test2" />
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+</suite>

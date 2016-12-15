@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AppointmentTests">
+<listeners>
+		<listener class-name="com.Report.Listener" />
+	</listeners> 
+ 	<test name="testGuru3">
+
+		<classes>
+
+			<class name="com.Sample.TestSample">
+				<methods>
+					<include name="TestSampleTest" />
+					<include name="TestSampleTest1" />
+					<include name="TestSampleTest2" />
+					<include name="TestSampleTest3" />
+					<include name="TestSampleTest4" />
+					<include name="TestSampleTest5" />
+					<include name="TestSampleTest6" />
+
+				</methods>
+				</class>
+				<class name="com.Sample.AppTest">
+				<methods>
+					<include name="TestPass" />
+
+				</methods>
+
+		
+
+			</class>
+
+		</classes>
+
+	</test> 
+
+	<test name="testGuru5">
+
+		<classes>
+
+			<class name="com.Sample.AppTest">
+				<methods>
+					<include name="LogIn_Test" />
+
+				</methods>
+
+			</class>
+
+		</classes>
+
+	</test>
+
+</suite>

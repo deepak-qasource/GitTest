@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name='QASourceRegressionSuite'>
+<listeners>
+		<listener class-name="com.Report.Listener" />
+	</listeners> 
+<suite-files>
+<suite-file path="ContactTests.xml"></suite-file>
+<suite-file path="AppointmentTests.xml"></suite-file>
+<suite-file path="MeetingTests.xml"></suite-file>
+</suite-files>
+</suite>
